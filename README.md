@@ -1,1 +1,3 @@
-# RewardsBank Chrome Extention App
+# RewardsBank Chrome Extension App
+
+Aggregates rewards accounts into one convenient location
