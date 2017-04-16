@@ -13,7 +13,8 @@
 			"19": "img/icon48.png",          
 			"38": "img/icon48.png"          
 		},
-		"default_popup": "popup.html"
+		"default_popup": "popup.html",
+		"default_title": "RewardsBank"
 	},
 	"content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
 	"web_accessible_resources": [

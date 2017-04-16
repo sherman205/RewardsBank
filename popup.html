@@ -14,6 +14,7 @@
 		<!-- Scripts -->
 		<script src="js/jquery-2.0.3.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="popup.js"></script>
 		
 		<!-- Cascading Style Sheets -->
 		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
@@ -26,16 +27,16 @@
 			<div class="navbar-header">
 				<a class="navbar-brand"><img src="img/icon48.png" style="width:20px;height:20px"></a>
 			</div>
-			<div class="collapse navbar-collapse navbar-ex1-collapse">
+			<div class="collapse navbar-collapse navbar-ex1-collapse" id="tabs">
 				<ul class="nav navbar-nav">
 					<li class="active">
-						<a href="#">Airlines</a>
+						<a href="#tab1" rel="tab1">Airlines</a>
 					</li>
 					<li>
-						<a href="#">Hotels</a>
+						<a href="#tab2" rel="tab2">Hotels</a>
 					</li>
 					<li>
-						<a href="#">
+						<a href="#tab3" rel="tab3">
 							<i class="glyphicon glyphicon-thumbs-up"></i>
 						</a>
 					</li>
@@ -43,7 +44,7 @@
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Actions <b class="caret"></b></a>
 						<ul class="dropdown-menu">
 							<li>
-								<a href="#">Action</a>
+								<a href="#">Add an account</a>
 							</li>
 							<li>
 								<a href="#">Another action</a>
@@ -62,7 +63,13 @@
 				</ul>
 			</div>
 		</nav>
-		<script type="text/javascript" src="popup.js"></script>
+
+
+   		<div id="tabsContainer">
+   			<div id="tab1" class="tabContent">Surprise</div>
+   			<div id="tab2" class="tabContent">Hey There</div>
+   		</div>
+
 		<section>
 			<table class="table table-hover" id="accounts">
 				<thead>
