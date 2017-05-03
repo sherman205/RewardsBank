@@ -27,8 +27,8 @@
 			<div class="navbar-header">
 				<a class="navbar-brand"><img src="img/icon48.png" style="width:20px;height:20px"></a>
 			</div>
-			<div class="collapse navbar-collapse navbar-ex1-collapse" id="tabs">
-				<ul class="nav navbar-nav">
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav" id="tabs">
 					<li class="active">
 						<a href="#tab1" rel="tab1">Airlines</a>
 					</li>
@@ -40,6 +40,8 @@
 							<i class="glyphicon glyphicon-thumbs-up"></i>
 						</a>
 					</li>
+				</ul>
+				<ul class="nav navbar-nav">
 					<li class="dropdown">
 						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Actions <b class="caret"></b></a>
 						<ul class="dropdown-menu">
@@ -64,43 +66,74 @@
 			</div>
 		</nav>
 
-
    		<div id="tabsContainer">
-   			<div id="tab1" class="tabContent">Surprise</div>
-   			<div id="tab2" class="tabContent">Hey There</div>
+   			<div id="tab1" class="tabContent">
+   				<section>
+				<table class="table table-hover" id="airlines">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Name</th>
+							<th>Account #</th>
+							<th>Points</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!--<tr>
+							<td>1</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td colspan="2"></td>
+							<td></td>
+						</tr>-->
+					</tbody>
+				</table>
+				</section>
+   			</div>
+   			<div id="tab2" class="tabContent">
+   				<section>
+				<table class="table table-hover" id="hotels">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>You tell me</th>
+							<th>YEAH #</th>
+							<th>Points</th>
+						</tr>
+					</thead>
+					<tbody>
+						<!--<tr>
+							<td>1</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td colspan="2"></td>
+							<td></td>
+						</tr>-->
+					</tbody>
+				</table>
+				</section>
+   			</div>
    		</div>
 
-		<section>
-			<table class="table table-hover" id="accounts">
-				<thead>
-					<tr>
-						<th>#</th>
-						<th>Name</th>
-						<th>Account #</th>
-						<th>Points</th>
-					</tr>
-				</thead>
-				<tbody>
-					<!--<tr>
-						<td>1</td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>2</td>
-						<td></td>
-						<td></td>
-						<td></td>
-					</tr>
-					<tr>
-						<td>3</td>
-						<td colspan="2"></td>
-						<td></td>
-					</tr>-->
-				</tbody>
-			</table>
-		</section>
-		<div id="content"></div>
 	</body>
 </html>

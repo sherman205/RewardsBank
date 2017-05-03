@@ -14,14 +14,20 @@ function switchTabs() {
 
 function init() {
 	$(".tabContent").hide();
+	$("#tab1").show();
 	switchTabs();
 
-	var tbody = $("#accounts tbody");
-	if (tbody.children().length == 0) {
-		$('#accounts').find(tbody).append("<tr><td colspan='4'>Uh oh! \
+	var airlinebody = $("#airlines tbody");
+	var hotelbody = $("#hotels tbody");
+	if (airlinebody.children().length == 0) {
+		$('#airlines').find(airlinebody).append("<tr><td colspan='4'>Uh oh! \
 			Click 'Actions' to add an account!</td></tr>");
 		//$('#accounts').find(tbody).append("<tr><td>1</td><td>United</td></tr>");
-		//$('#content').html('Add an account!');
+	}
+	if (hotelbody.children().length == 0) {
+		$('#hotels').find(hotelbody).append("<tr><td colspan='4'>Uh oh! \
+			Click 'Actions' to add an account!</td></tr>");
+		//$('#accounts').find(tbody).append("<tr><td>1</td><td>United</td></tr>");
 	}
 	else {
 		$('#content').html('blah');
