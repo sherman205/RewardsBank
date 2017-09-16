@@ -19,6 +19,7 @@
 		<!-- Cascading Style Sheets -->
 		<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
 		<link href="css/custom.css" rel="stylesheet" media="screen">		
+		<link href="styles.css" rel="stylesheet">
 	</head>
 	
 	<body>
@@ -98,6 +99,30 @@
 						</tr>-->
 					</tbody>
 				</table>
+				
+				<button type="button" class="btn btn-info btn-sm" id="addAccountButton" data-toggle="modal" data-target="#airlineModal">
+          				<span class="glyphicon glyphicon-plus"></span> Add Account
+   					</button>
+
+	   				<!-- Popup modal to add airline account -->
+	   				<div id="airlineModal" class="modal fade" role="dialog">
+	   					<div class="modal-dialog modal-sm">
+	   						<div class="modal-content">
+	   							<div class="modal-header">
+	   								<button type="button" class="close" data-dismiss="modal">&times;</button>
+	   								<h4 class="modal-title">Add an airline account</h4>
+	   							</div>
+	   							<div class="modal-body">
+	   								<p>text</p>
+	   							</div>
+	   							<div class="modal-footer">
+	   								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	   								<button class="btn btn-primary odom-submit">Submit</button>
+	   							</div>
+	   						</div>
+	   					</div>
+	   				</div>
+
 				</section>
    			</div>
    			<div id="tab2" class="tabContent">
@@ -106,8 +131,8 @@
 					<thead>
 						<tr>
 							<th>#</th>
-							<th>You tell me</th>
-							<th>YEAH #</th>
+							<th>Name</th>
+							<th>Account #</th>
 							<th>Points</th>
 						</tr>
 					</thead>
@@ -131,6 +156,9 @@
 						</tr>-->
 					</tbody>
 				</table>
+				<button class="btn btn-info btn-sm" id="addAccountButton">
+          			<span class="glyphicon glyphicon-plus"></span> Add Account
+   				</button>
 				</section>
    			</div>
    		</div>

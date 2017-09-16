@@ -1,0 +1,16 @@
+/* -------------- Classes ------------- */
+
+.modal-sm {
+	width: 400px;
+}
+
+/* -------------- IDs ---------------- */
+
+#addAccountButton {
+	margin-left: 35%;
+	margin-right: 30%;
+} 
+
+#airlineModal {
+	overflow: hidden;
+}
