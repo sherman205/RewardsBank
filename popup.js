@@ -1,6 +1,8 @@
 // Used by "popup.html" to alter the states 
 // of the elements of that page
 
+
+// Changes the views of the app when clicking on different tabs
 function switchTabs() {
 	$("#tabs li").click(function() {
 		$("#tabs li").removeClass('active');
@@ -12,6 +14,19 @@ function switchTabs() {
 	});
 }
 
+function createAirlinesDropDown() {
+	var airlines = ['American', 'Delta', 'Lufthansa', 'United', 'Virgin Atlantic'];
+	select = document.getElementById('sel1');
+	for (var i = 0; i < airlines.length; i++) {
+		var opt = document.createElement('option');
+		opt.value = airlines[i];
+		opt.innerHTML = airlines[i];
+		select.appendChild(opt);
+	}
+}
+
+// Called when "popup.html" is finished loading. 
+// Loads updated account information 
 function init() {
 	$(".tabContent").hide();
 	$("#tab1").show();
@@ -36,6 +51,7 @@ function init() {
 	else {
 		$('#content').html('blah');
 	}
+	createAirlinesDropDown();
 }
 
 document.addEventListener('DOMContentLoaded', init);

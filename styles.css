@@ -1,8 +1,21 @@
+/* -------------- Tags ---------------- */
+
+
+
 /* -------------- Classes ------------- */
 
 .modal-sm {
 	width: 400px;
 }
+
+.modal-content {
+	text-align: center;
+}
+
+.form-group input {
+	width: 50%;
+}
+
 
 /* -------------- IDs ---------------- */
 
