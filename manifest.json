@@ -16,6 +16,10 @@
 		"default_popup": "popup.html",
 		"default_title": "RewardsBank"
 	},
+	"background": {
+		"scripts": ["background.js"],
+		"persistent": false
+	},
 	"content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
 	"web_accessible_resources": [
 		"img/icon128.png"
@@ -23,6 +27,7 @@
 	"permissions": [
 		"storage",
 		"tabs",
-		"https://www.united.com/*/"
+		"activeTab",
+		"https://www.united.com/*"
 	]
 }

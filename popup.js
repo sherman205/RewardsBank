@@ -25,6 +25,23 @@ function createAirlinesDropDown() {
 	}
 }
 
+function addAirlineAccount() {
+    $('#airlineForm').submit(function (e) {
+    	e.preventDefault();
+    	var values = {};
+    	$.each($('#airlineForm').serializeArray(), function(i, field) {
+    		values[field.name] = field.value;
+    	});
+    	console.log(values);
+    	$('#airlines').find('tbody').append("<tr><td>1</td><td>"+ Object.values(values)[0] +"</td><td>"+ Object.values(values)[1] +"</td></tr>");
+    	$('#airlineForm').trigger("reset");
+    	$('#airlineModal').modal('hide');
+    	$('#airlines').show();	
+    });
+}
+
+
+
 // Called when "popup.html" is finished loading. 
 // Loads updated account information 
 function init() {
@@ -52,6 +69,8 @@ function init() {
 		$('#content').html('blah');
 	}
 	createAirlinesDropDown();
+	//submitForm();
+	addAirlineAccount();
 }
 
 document.addEventListener('DOMContentLoaded', init);

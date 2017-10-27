@@ -70,7 +70,7 @@
    		<div id="tabsContainer">
    			<div id="tab1" class="tabContent">
    				<section>
-				<table class="table table-hover" id="airlines">
+				<table class="table table-hover" id="airlines" style="display:none">
 					<thead>
 						<tr>
 							<th>#</th>
@@ -79,25 +79,7 @@
 							<th>Points</th>
 						</tr>
 					</thead>
-					<tbody>
-						<!--<tr>
-							<td>1</td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>2</td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>3</td>
-							<td colspan="2"></td>
-							<td></td>
-						</tr>-->
-					</tbody>
+					<tbody></tbody>
 				</table>
 				
 				<button type="button" class="btn btn-info btn-sm" id="addAccountButton" data-toggle="modal" data-target="#airlineModal">
@@ -112,34 +94,32 @@
 	   								<button type="button" class="close" data-dismiss="modal">&times;</button>
 	   								<h4 class="modal-title">Add an airline account</h4>
 	   							</div>
-	   							<div class="modal-body">
-	   								<form>
+	   							<div class="modal-body" id="airlineModal">
+	   								<form id="airlineForm" action="">
 	   									<div class="form-group form-inline">
 									    	<label for="sel1">Airline:</label>
-									    	<select class="form-control" id="sel1">
-									    	</select>
+									    	<select class="form-control" id="sel1" name="airline_dropdown"></select>
 									  	</div>
 									  	<div class="form-group form-inline">
 									    	<label for="login">Account #:</label>
-									    	<input type="login" class="form-control" id="login">
+									    	<input type="login" class="form-control" id="login" name="login_name" required/>
 									  	</div>
 									  	<div class="form-group form-inline">
 									    	<label for="pwd">Password:</label>
-									    	<input type="password" class="form-control" id="pwd">
+									    	<input type="password" class="form-control" id="pwd" name="passwd_name" required/>
 									  	</div>
 									  	<!--<div class="checkbox">
 									    	<label><input type="checkbox"> Remember me</label>
 									  	</div>-->
-									</form>
-	   							</div>
-	   							<div class="modal-footer">
-	   								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-	   								<button type="submit" class="btn btn-primary odom-submit">Submit</button>
+	   									<div class="modal-footer">
+	   										<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	   										<button type="submit" class="btn btn-primary odom-submit">Submit</button>
+	   									</div>
+	   								</form>
 	   							</div>
 	   						</div>
 	   					</div>
 	   				</div>
-
 				</section>
    			</div>
    			<div id="tab2" class="tabContent">
@@ -153,25 +133,7 @@
 							<th>Points</th>
 						</tr>
 					</thead>
-					<tbody>
-						<!--<tr>
-							<td>1</td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>2</td>
-							<td></td>
-							<td></td>
-							<td></td>
-						</tr>
-						<tr>
-							<td>3</td>
-							<td colspan="2"></td>
-							<td></td>
-						</tr>-->
-					</tbody>
+					<tbody></tbody>
 				</table>
 				<button class="btn btn-info btn-sm" id="addAccountButton">
           			<span class="glyphicon glyphicon-plus"></span> Add Account
