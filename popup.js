@@ -69,7 +69,6 @@ function init() {
 		$('#content').html('blah');
 	}
 	createAirlinesDropDown();
-	//submitForm();
 	addAirlineAccount();
 }
 

@@ -1,4 +1,30 @@
 {
+	"key": "MIIEwAIBADANBgkqhkiG9w0BAQEFAASCBKowggSmAgEAAoIBAQDCOhprXcpsbCIR
+	zyqyq7n/kapypvkSJVETukm9CMwsnrjJc+jQ9O1suTn6vcJj7rXPIsVpbdWjQGz+
+	J4bw5EBxGin/lj68yk4gaeouuxe+RiHvjABUZ+79py0zEQJ4dSbFBcY5pyM7FoCz
+	ytuveJsS9xZM4oietOzDuZ8TF5tYM5jhzL34bkPMgY9j0XtFpCSo/66OJDHxyug/
+	938L5C/Pes6gFcPLdOdhDp9UCkLAySJfpnpHhb92xWb+OMLHlBloHgXrwrAlQW2P
+	zngSnVzKKh8H/1dshUOlTUtEY4X2CmpfeHaXYt4rUL0h6C/UYZKYYwcgRcG0MzdC
+	M/43EFNTAgMBAAECggEBAI8Oms0ADQuk7ccuTuXBBMOP9/pwr73EzJ36NTvN0gz/
+	b126SP43mPTezSy5Pge7GCCUHNGVu6h92ImudX7SsABeZBbEBDuryrWnLXz0Av37
+	zB0Tgl6pGuerjegyHB67My4lHabzS0jHP06uGPd6nsXuRnek1zoGSumyu88lMR9Z
+	wALgwQV7l5z2QAcxUSvPhkh4N8cBWem/4igvZTyLy4dRrl69YL4dziatC9SuoKkF
+	qXgdh713DhY29Nx/Jtwnl5s19y1GkoA8//0zUjN05laHQXgM+O3qYD7uTra5rt8T
+	wsE9YEqgMMqYoobN1hHxiyxmN+pakkV5jrH4v65ObokCgYEA81B5mNRQM9GggUcC
+	8Idz4gKnAstLfLI1jtHpvdS2b3cWHPrChILKh70UB4NyNKu47AMR51mKA9WgA6pT
+	+FKaIYgVW3R5XNOBsY4jgE9iACUfKxjZ8iqInxC0Fz+zVTQdTBlVSMvltCY1csCa
+	MzsEELB6fgJ1uN8IzZg6uILhuIcCgYEAzFp1B2tsb3hMvDhzmPSQ2GAKvdmMtfly
+	dtDMyTVDlx8Vcm609wXEAOM54C5YSl+CuHcythNBs/Q76plSAcp4UqTKvHLPy0yI
+	d3AaoOu3qfMwvq5iT3Yfds+BbhMJgG/bs+t1lzylE0OkVbdnPKDKxG03tVEzLZcZ
+	2ssIX3TxndUCgYEAvUq8bwOuKcJKZokCZnJa21hI6kmSvr4+IJB6km7sR6eUEpOb
+	xU+jlRqqfHXs4cE/Ko3w3dWxI+6MgI2Aqk5JDxE53F6vFGKQIbx9LhOUIJzAtNyu
+	olIo2+c41GWAdScIK+4BhZLrb83SAyaIUJb3QKyrf2EWiO8rgBeQh397b/0CgYEA
+	he7vbsp4SmK1IFN7aA86c6YWxDE2aPoxjC/zWBhh0UUdIF/wmUodGVvTzdtyIGSS
+	32W4Rd8/G7uCHZMZTXUvATNicLpq+FqTwnwl57w2Jtvt4buXUW8g1hTQRp2Rh61I
+	eJZk/pdPtd2Kcmd+8RyNaMoQTfUHLuUum9igBzg1N3UCgYEAzWg+8VLXuM9guU0f
+	NICNjx/9ghb5NjimY0649d6mAkNPEONB+Th7mKoIe7pIAGggbhRVJG6fYXcfJIid
+	6i+/R0RZTc9CzalZYA7Cf8b51oMEXRk/6sKKEeyjkwgG7R2iyVt0yuy/aBAOi9rK
+	mf8JwwujYAVUgxv7GwfxWJ+xops=",
 	"manifest_version": 2,
 	"name": "Rewards Bank",
 	"description": "Aggregates reward accounts into one convenient location",
@@ -28,6 +54,11 @@
 		"storage",
 		"tabs",
 		"activeTab",
+		"identity",
 		"https://www.united.com/*"
-	]
+	],
+	"oauth2": {
+		"client_id": "477801804750-m4bfq8lqijsdr6ab851nsub3klhgvscn.apps.googleusercontent.com",
+		"scopes": ["profile"]
+	}
 }
